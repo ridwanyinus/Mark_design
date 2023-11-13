@@ -86,11 +86,59 @@
    }
 }
 @media screen and (min-width: 1024px) {
-   .hero_h1-overflay-left {
+   .hero_content_container {
+      padding-top: 3rem;
+   }
+   .header_h1 {
+      min-width: 946px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .overlays {
       display: none;
    }
-   .hero_h1-overflay {
-      display: none;
+   .overlays_web {
+      display: block;
+   }
+   .hero_overlay-lg {
+      border-radius: 411px;
+      background: var(--light);
+      filter: blur(30px);
+      width: 411px;
+      height: 411px;
+      flex-shrink: 0;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      bottom: -50px;
+   }
+   .hero_overlay-lg_ri {
+      border-radius: 411px;
+      background: var(--light);
+      filter: blur(30px);
+      width: 411px;
+      height: 411px;
+      flex-shrink: 0;
+      position: absolute;
+      z-index: 0;
+      right: 50px;
+      top: 40px;
+   }
+   .hero_headline {
+      min-width: 759px;
+      height: 220px;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 73px;
+   }
+   .hero_paragraph1 {
+      font-size: 24px;
+   }
+   .hero_paragraph2 {
+      font-size: 32px;
+      margin-bottom: 1rem;
    }
 }
 
@@ -149,7 +197,7 @@
       display: none;
    }
    .hero_h1-overflay {
-      display: flex;
+      display: block;
       border-radius: 411px;
       background: #e5e5e5;
       filter: blur(30px);
@@ -164,7 +212,7 @@
       display: none;
    }
    .hero_h1-overflay-left {
-      display: flex;
+      display: block;
       border-radius: 411px;
       background: #e5e5e5;
       filter: blur(30px);
@@ -178,14 +226,8 @@
 }
 
 @media screen and (min-width: 768px) {
-   .hero_btn {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-   }
-   .hero_btn button:nth-child(1) {
-      margin-bottom: 0;
-      margin-right: 1.5rem;
+   .hero_overlay_right {
+      top: 100px;
    }
 }
 
@@ -211,5 +253,14 @@
 @media screen and (min-width: 398px) {
    .hero_overlay_right {
       bottom: 300px;
+   }
+   .hero_btn {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .hero_btn button:nth-child(1) {
+      margin-bottom: 0;
+      margin-right: 1.5rem;
    }
 }
