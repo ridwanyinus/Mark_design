@@ -76,6 +76,19 @@
    }
 }
 
+@media screen and (min-width: 1150px) {
+   .aboutUs_content p {
+      width: 525px;
+      height: 421px;
+      flex-shrink: 0;
+   }
+
+   .aboutUs__img-container {
+      max-width: 435px;
+      height: 582px;
+      margin-bottom: 3rem;
+   }
+}
 @media screen and (max-width: 1115px) {
    .nav_logo_img {
       width: 241px;
@@ -135,10 +148,55 @@
    }
    .hero_paragraph1 {
       font-size: 24px;
+      text-align: center;
    }
    .hero_paragraph2 {
       font-size: 32px;
       margin-bottom: 1rem;
+   }
+   .aboutUs_content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+   }
+   .aboutUs_content div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: start;
+   }
+   .aboutUs_content div:nth-child(1) {
+      padding: 2rem 0;
+   }
+   .aboutUs_content div p {
+      font-size: 24px;
+      line-height: 34px;
+      max-width: 525px;
+      height: 421px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: start;
+   }
+
+   .aboutUs__img-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-width: 350px;
+      height: 582px;
+      margin-top: 0;
+   }
+   .aboutUs__btn {
+      display: none;
+   }
+   .aboutUs__learn-more_btn {
+      display: block;
+      padding: 1rem 2rem;
+
+      margin-top: 2rem;
    }
 }
 
@@ -223,10 +281,29 @@
       left: -150px;
       bottom: -70px;
    }
+   .about__h1 {
+      margin: 2rem 0 2.5rem 0;
+      font-size: 36px;
+   }
+   .aboutUs_content p {
+      font-size: 24px;
+      line-height: 34px; /* 141.667% */
+      width: 656px;
+      flex-shrink: 0;
+   }
+   .aboutUs__btn {
+      padding: 1rem 2rem;
+   }
 }
 
 @media screen and (min-width: 768px) {
-  
+   .aboutUs__img-container {
+      width: 490px;
+      height: 582px;
+      flex-shrink: 0;
+
+      margin-bottom: 3rem;
+   }
 }
 
 @media screen and (max-width: 555px) {
