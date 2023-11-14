@@ -88,6 +88,9 @@
       height: 582px;
       margin-bottom: 3rem;
    }
+  .portfolio__container {
+      max-width: 70%;
+   }
 }
 @media screen and (max-width: 1115px) {
    .nav_logo_img {
@@ -198,6 +201,37 @@
 
       margin-top: 2rem;
    }
+   .portfolio {
+      /* padding: 0 10rem; */
+   }
+   .portfolio__container {
+      max-width: 80%;
+   }
+   .portfolio_img {
+      display: none;
+   }
+   .portfolio__img_lg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      z-index: -100;
+      inset: 0;
+      opacity: 0.8;
+   }
+   .portfolio__h1 {
+      max-width: 615px;
+   }
+   .portfolio h1 {
+      font-size: 32px;
+      width: 100%;
+      line-height: 180%;
+      letter-spacing: 2.08px;
+   }
+   .portfolio__project {
+      padding-top: 2rem;
+   }
 }
 
 @media screen and (max-width: 855px) {
@@ -301,8 +335,79 @@
       width: 490px;
       height: 582px;
       flex-shrink: 0;
-
       margin-bottom: 3rem;
+   }
+   .portfolio {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 6rem;
+      background: var(--dark);
+   }
+   .portfolio_img {
+      object-fit: cover;
+      height: 100vh;
+      flex-shrink: 0;
+      /* opacity: 0.6; */
+   }
+   .portfolio__h1 {
+      max-width: 100%;
+   }
+   .portfolio h1 {
+      color: #fff;
+      font-family: Mulish;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 1.82px;
+      width: 448px;
+      height: 100%;
+      flex-shrink: 0;
+   }
+   .portfolio h1 span {
+      width: 107px;
+      border-bottom: 3px solid #fff;
+   }
+   .portfolio__project {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+   }
+
+   .portfolio__project button {
+      color: #fff;
+      font-family: var(--quattrocento);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 0.7rem 1rem;
+      align-items: center;
+      border-radius: 50px;
+      border: 1.5px solid #fff;
+      background: none;
+      cursor: pointer;
+      margin-bottom: 0;
+   }
+
+   .pro_content {
+      min-width: 100%;
+      flex: 1;
+   }
+   .portfolio__container {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+   }
+   .portfolio__project button {
+      padding: 1rem 1.5rem;
+      font-size: 18px;
+   }
+   .pro_content div svg {
+      width: 167.654px;
+      height: 70px;
+      flex-shrink: 0;
+      /* cursor: pointer; */
    }
 }
 
@@ -322,6 +427,9 @@
    .hero_paragraph1 {
       font-size: 20px;
       min-width: 400px;
+   }
+   .portfolio__h1 {
+      max-width: 400px;
    }
 }
 
